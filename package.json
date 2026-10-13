@@ -1,0 +1,34 @@
+{
+  "name": "@0sfs/g-forces",
+  "version": "0.1.0",
+  "private": true,
+  "description": "G-forces for 0SFS: pilot load, the G meter, vision effects and the G-forces panel.",
+  "license": "AGPL-3.0-only",
+  "type": "module",
+  "exports": {
+    "./gForce": {
+      "source": "./src/gForce.ts",
+      "default": "./src/gForce.ts"
+    },
+    "./gMeter": {
+      "source": "./src/gMeter.ts",
+      "default": "./src/gMeter.ts"
+    },
+    "./gVisionOverlay": {
+      "source": "./src/gVisionOverlay.ts",
+      "default": "./src/gVisionOverlay.ts"
+    },
+    "./package.json": "./package.json"
+  },
+  "peerDependencies": {
+    "foss-earth": "0.1.0"
+  },
+  "peerDependenciesMeta": {
+    "foss-earth": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "vitest": "4.1.6"
+  }
+}
