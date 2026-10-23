@@ -49,11 +49,12 @@ export interface GVision {
 export const CLEAR_G_VISION: GVision = { blackout: 0, redout: 0 };
 
 /** A first-order lag is within 5% of its target after three time constants. */
-const SETTLE_TIME_CONSTANTS = 3;
+export const SETTLE_TIME_CONSTANTS = 3;
 /** Closer than this the level is its target, so a settled vignette stops changing. */
-const SETTLED = 1e-4;
+export const SETTLED = 1e-4;
 
-function share(value: number, from: number, to: number): number {
+/** Where `value` lies from `from` to `to`, 0 to 1; a range whose ends are equal is a step at them. */
+export function share(value: number, from: number, to: number): number {
   if (from === to) return value >= to ? 1 : 0;
   return Math.min(1, Math.max(0, (value - from) / (to - from)));
 }

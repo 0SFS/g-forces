@@ -18,6 +18,26 @@
       "source": "./src/gVisionOverlay.ts",
       "default": "./src/gVisionOverlay.ts"
     },
+    "./pilotResponse": {
+      "source": "./src/pilotResponse.ts",
+      "default": "./src/pilotResponse.ts"
+    },
+    "./curveResponse": {
+      "source": "./src/curveResponse.ts",
+      "default": "./src/curveResponse.ts"
+    },
+    "./exposureResponse": {
+      "source": "./src/exposureResponse.ts",
+      "default": "./src/exposureResponse.ts"
+    },
+    "./perfusionResponse": {
+      "source": "./src/perfusionResponse.ts",
+      "default": "./src/perfusionResponse.ts"
+    },
+    "./responseTrace": {
+      "source": "./src/responseTrace.ts",
+      "default": "./src/responseTrace.ts"
+    },
     "./package.json": "./package.json"
   },
   "peerDependencies": {
