@@ -1,0 +1,31 @@
+{
+  "source": {
+    "id": "WF15",
+    "citation": "Whinnery T, Forster EM. Neurologic state transitions in the eye and brain: kinetics of loss and recovery of vision and consciousness. Visual Neuroscience 2015;32:E008.",
+    "pmid": "26241524",
+    "read": "abstract only (Europe PMC); no spreads"
+  },
+  "conditions": {
+    "subjects": "104",
+    "stimulus": "Retinal ischemia from raised ocular pressure, not acceleration; then release",
+    "event": "Peripheral light loss and blackout from the onset of ischemia; full visual field back after release"
+  },
+  "assumptions": [
+    "A step to +12 g, where the models' retinal supply stops at once, stands in for the ocular-pressure step. The brain is not affected by the real stimulus but is by this one; only the visual events are scored.",
+    "Peripheral light loss is read as the symptoms event, blackout as sight lost, and the full visual field as the field clear again.",
+    "No spread is reported, so these fixtures carry no normalised error."
+  ],
+  "fixtures": [
+    { "id": "wf15-pll", "family": "Retina: loss and return", "role": "fit", "pilot": "relaxed", "locator": "Abstract",
+      "protocol": { "startG": 1, "stages": [{ "segments": [{ "seconds": 0, "toG": 12 }, { "seconds": 30 }] }] },
+      "outcome": { "event": "symptoms", "from": "start", "mean": 5.04 } },
+    { "id": "wf15-blackout", "family": "Retina: loss and return", "role": "fit", "pilot": "relaxed", "locator": "Abstract",
+      "protocol": { "startG": 1, "stages": [{ "segments": [{ "seconds": 0, "toG": 12 }, { "seconds": 30 }] }] },
+      "outcome": { "event": "vision-lost", "from": "start", "mean": 8.73 } },
+    { "id": "wf15-return", "family": "Retina: loss and return", "role": "fit", "pilot": "relaxed", "locator": "Abstract",
+      "protocol": { "startG": 1, "stages": [
+        { "segments": [{ "seconds": 0, "toG": 12 }, { "seconds": 30 }], "until": "vision-lost" },
+        { "segments": [{ "seconds": 0, "toG": 1 }, { "seconds": 30 }] }] },
+      "outcome": { "event": "field-clear", "from": "vision-lost", "mean": 2.74 } }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "description": "Evidence fixtures for the pilot response models: published protocols reconstructed as load traces, with their observed outcomes. Each file names its source, what was read, the conditions, and the assumptions made in reconstructing it. Roles: fit (used to choose parameters), holdout (not used, scored to check), unresolved (not scored; reason given). See docs/g-response-comparison.md.",
+  "version": 1,
+  "files": [
+    "w13-onset.json",
+    "w14-recovery.json",
+    "ww90b-recovery.json",
+    "wf15-retina.json",
+    "c54-relaxed-thresholds.json",
+    "e07-protection.json",
+    "unresolved.json"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "source": {
+    "id": "unresolved",
+    "citation": "Sources read but not reconstructed as scored fixtures; kept so the reasons stay with the data."
+  },
+  "fixtures": [
+    { "id": "x21-push-pull", "family": "Push-pull", "role": "unresolved",
+      "source": "Xing C-Y et al. Front Physiol 2021;12:672351, doi 10.3389/fphys.2021.672351, Tables 1-3 and Fig 2 (full text read)",
+      "protocol": { "startG": 1, "stages": [{ "segments": [{ "seconds": 300 }, { "seconds": 3.33, "toG": -0.87 }, { "seconds": 15 }, { "seconds": 3.33, "toG": 1 }, { "seconds": 60 }] }] },
+      "observed": "Tilt table, 20 men. Heart-level mean pressure 93 +/- 6 mmHg at baseline, 69 +/- 9 in the first 5 s back at +1 g after 15 s at -0.87 g, then about 75 and 84 (Fig 2). Cerebral flow velocity -7.8 +/- 4.4 cm/s (-13%), back by 10 s.",
+      "reason": "No control without the push, so the dip mixes push-pull with the change of posture; time zero relative to the 3.3 s tilt is not given; no visual or LOC events were monitored. Compared qualitatively with the Perfusion model's heart-level pressure, not scored." },
+    { "id": "h85", "family": "Onset and recovery", "role": "unresolved",
+      "source": "Houghton JO et al. Aviat Space Environ Med 1985;56:956-965, PMID 4062770 (abstract)",
+      "observed": "n 8: '2- and 4-s onset' to 6.1 g, absolute incapacitation 12.1 s; 0.067 g/s to 7.2 g, 16.6 s.",
+      "reason": "The rapid onset is ambiguous, protection and offsets are not given, and there are no spreads." },
+    { "id": "ww90", "family": "Recovery after LOC", "role": "unresolved",
+      "source": "Whinnery JE, Whinnery AM. Arch Neurol 1990;47:764-776, PMID 2357157 (abstract)",
+      "observed": "501 episodes: absolute incapacitation 11.9 s, relative 16 s, total 28 s.",
+      "reason": "Pooled over unreported profiles; overlaps the W14 population." },
+    { "id": "cgem-traces", "family": "Reference model", "role": "unresolved",
+      "source": "Copeland K. CGEM user's guide, DOT/FAA/AM-23/5, Appendices B-D; Copeland and Whinnery, DOT/FAA/AM-23/6, Figs 1-2",
+      "observed": "Model outputs: a 27-rate series for an average woman and a vertical-eight run (visual onset 27.509 s at 5.902 g, blackout 29.406 s at 4.535 g, no G-LOC).",
+      "reason": "Golden traces of the CGEM model, not human data. The CGEM software's licence and source are unknown, so no Reference model was built; these would test one." }
+  ]
+}

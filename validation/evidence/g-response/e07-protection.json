@@ -1,0 +1,27 @@
+{
+  "source": {
+    "id": "E07",
+    "citation": "Eiken O, Kölegård R, Bergsten E, Grönkvist M. G protection: interaction of straining maneuvers and positive pressure breathing. Aviation, Space, and Environmental Medicine 2007;78:392-398. Numbers as tabulated by Copeland K, Whinnery JE, DOT/FAA/AM-23/6, 2023, Table II.",
+    "pmid": "17484342",
+    "read": "abstract, and the citing report's Table II"
+  },
+  "conditions": {
+    "subjects": "10",
+    "onset": "Rapid; rate not in the abstract; runs stopped at +9 g",
+    "event": "Load at full peripheral light loss"
+  },
+  "assumptions": [
+    "Each run is reconstructed as a jump from rest held 15 s.",
+    "Full peripheral light loss is read as the symptoms event, which needs less loss: a model that meets this criterion will show it at a slightly lower load.",
+    "Protected values are lower bounds: runs stopped at +9 g. Suit alone is the protected pilot without straining.",
+    "A different study from the fitted relaxed thresholds (C54): the relaxed value is held out. No other study gives protection, so the protected values are fitted and nothing protects them from overfitting."
+  ],
+  "fixtures": [
+    { "id": "e07-relaxed", "family": "Relaxed thresholds", "role": "holdout", "pilot": "relaxed", "locator": "CGEM-R Table II",
+      "outcome": { "event": "symptoms", "measure": "threshold", "holdSeconds": 15, "mean": 3.4, "sd": 0.5, "n": 10 } },
+    { "id": "e07-suit", "family": "Protection", "role": "fit", "pilot": "suit", "locator": "CGEM-R Table II",
+      "outcome": { "event": "symptoms", "measure": "threshold", "holdSeconds": 15, "mean": 6.5, "sd": 1.2, "n": 10, "bound": "lower" } },
+    { "id": "e07-suit-strain", "family": "Protection", "role": "fit", "pilot": "protected", "locator": "CGEM-R Table II",
+      "outcome": { "event": "symptoms", "measure": "threshold", "holdSeconds": 15, "mean": 8.9, "sd": 0.2, "n": 10, "bound": "lower" } }
+  ]
+}

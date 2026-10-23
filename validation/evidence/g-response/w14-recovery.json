@@ -1,0 +1,42 @@
+{
+  "source": {
+    "id": "W14",
+    "citation": "Whinnery JE, Forster EM, Rogers PB. The +Gz recovery of consciousness curve. Extreme Physiology & Medicine 2014;3:9.",
+    "doi": "10.1186/2046-7648-3-9",
+    "read": "full text, Europe PMC XML (PMC4007145)",
+    "sha256": "b683b1128b95cc1d65edcc5419ac64e40c8a8792fa8b34da329679bba7f34bef"
+  },
+  "conditions": {
+    "subjects": "715 G-LOC episodes with offset rates, same centrifuge programmes as W13",
+    "protection": "Mixed and not separated",
+    "seatBackDeg": "13-30",
+    "event": "ABSINCAP: from G-LOC to recovery of consciousness, from video by two investigators to within 1 s. The run was ended at G-LOC by a linear offset from GMAX to a base below +2 g."
+  },
+  "assumptions": [
+    "The pre-LOC profile is not reported: reconstructed as 2.5 g/s from +1.4 g to +7.7 g, the mean GMAX of all 760 episodes, held until LOC.",
+    "The offset starts at the step that shows LOC and ends at +1.4 g.",
+    "Scored with the relaxed pilot, as for W13."
+  ],
+  "fixtures": [
+    { "id": "w14-offset-a", "family": "Recovery after LOC", "role": "fit", "pilot": "relaxed", "locator": "Table 2, group a (0.42 +/- 0.07 g/s)",
+      "protocol": { "startG": 1.4, "stages": [
+        { "segments": [{ "toG": 7.7, "gPerSecond": 2.5 }, { "seconds": 60 }], "until": "unconscious" },
+        { "segments": [{ "toG": 1.4, "gPerSecond": 0.42 }, { "seconds": 60 }] }] },
+      "outcome": { "event": "conscious", "from": "unconscious", "mean": 13.62, "sd": 5.26, "n": 136 } },
+    { "id": "w14-offset-b", "family": "Recovery after LOC", "role": "fit", "pilot": "relaxed", "locator": "Table 2, group b (0.69 +/- 0.14 g/s)",
+      "protocol": { "startG": 1.4, "stages": [
+        { "segments": [{ "toG": 7.7, "gPerSecond": 2.5 }, { "seconds": 60 }], "until": "unconscious" },
+        { "segments": [{ "toG": 1.4, "gPerSecond": 0.69 }, { "seconds": 60 }] }] },
+      "outcome": { "event": "conscious", "from": "unconscious", "mean": 11.26, "sd": 5.22, "n": 261 } },
+    { "id": "w14-offset-c", "family": "Recovery after LOC", "role": "fit", "pilot": "relaxed", "locator": "Table 2, group c (1.20 +/- 0.14 g/s)",
+      "protocol": { "startG": 1.4, "stages": [
+        { "segments": [{ "toG": 7.7, "gPerSecond": 2.5 }, { "seconds": 60 }], "until": "unconscious" },
+        { "segments": [{ "toG": 1.4, "gPerSecond": 1.2 }, { "seconds": 60 }] }] },
+      "outcome": { "event": "conscious", "from": "unconscious", "mean": 8.60, "sd": 4.05, "n": 203 } },
+    { "id": "w14-offset-d", "family": "Recovery after LOC", "role": "fit", "pilot": "relaxed", "locator": "Table 2, group d (2.13 +/- 0.90 g/s)",
+      "protocol": { "startG": 1.4, "stages": [
+        { "segments": [{ "toG": 7.7, "gPerSecond": 2.5 }, { "seconds": 60 }], "until": "unconscious" },
+        { "segments": [{ "toG": 1.4, "gPerSecond": 2.13 }, { "seconds": 60 }] }] },
+      "outcome": { "event": "conscious", "from": "unconscious", "mean": 7.70, "sd": 3.39, "n": 115 } }
+  ]
+}

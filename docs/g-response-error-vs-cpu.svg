@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 340" width="560" height="340" font-family="system-ui, sans-serif" font-size="12">
+<rect width="560" height="340" fill="#ffffff"/>
+<text x="64" y="22" font-size="14" font-weight="600" fill="#111827">Held-out error against CPU, 60 Hz physics</text>
+<line x1="64" x2="64" y1="40" y2="284" stroke="#e5e7eb"/>
+<text x="64" y="300" text-anchor="middle" fill="#374151">0</text>
+<line x1="142.66666666666666" x2="142.66666666666666" y1="40" y2="284" stroke="#e5e7eb"/>
+<text x="142.66666666666666" y="300" text-anchor="middle" fill="#374151">10</text>
+<line x1="221.33333333333331" x2="221.33333333333331" y1="40" y2="284" stroke="#e5e7eb"/>
+<text x="221.33333333333331" y="300" text-anchor="middle" fill="#374151">20</text>
+<line x1="300" x2="300" y1="40" y2="284" stroke="#e5e7eb"/>
+<text x="300" y="300" text-anchor="middle" fill="#374151">30</text>
+<line x1="378.66666666666663" x2="378.66666666666663" y1="40" y2="284" stroke="#e5e7eb"/>
+<text x="378.66666666666663" y="300" text-anchor="middle" fill="#374151">40</text>
+<line x1="457.33333333333337" x2="457.33333333333337" y1="40" y2="284" stroke="#e5e7eb"/>
+<text x="457.33333333333337" y="300" text-anchor="middle" fill="#374151">50</text>
+<line x1="536" x2="536" y1="40" y2="284" stroke="#e5e7eb"/>
+<text x="536" y="300" text-anchor="middle" fill="#374151">60</text>
+<line x1="64" x2="536" y1="284" y2="284" stroke="#e5e7eb"/>
+<text x="56" y="288" text-anchor="end" fill="#374151">0</text>
+<line x1="64" x2="536" y1="235.20000000000002" y2="235.20000000000002" stroke="#e5e7eb"/>
+<text x="56" y="239.20000000000002" text-anchor="end" fill="#374151">1</text>
+<line x1="64" x2="536" y1="186.4" y2="186.4" stroke="#e5e7eb"/>
+<text x="56" y="190.4" text-anchor="end" fill="#374151">2</text>
+<line x1="64" x2="536" y1="137.60000000000002" y2="137.60000000000002" stroke="#e5e7eb"/>
+<text x="56" y="141.60000000000002" text-anchor="end" fill="#374151">3</text>
+<line x1="64" x2="536" y1="88.79999999999998" y2="88.79999999999998" stroke="#e5e7eb"/>
+<text x="56" y="92.79999999999998" text-anchor="end" fill="#374151">4</text>
+<line x1="64" x2="536" y1="40" y2="40" stroke="#e5e7eb"/>
+<text x="56" y="44" text-anchor="end" fill="#374151">5</text>
+<text x="300" y="324" text-anchor="middle" fill="#111827">CPU per accepted step, ns (median; bar: 10th–90th percentile of batches)</text>
+<text transform="translate(18 162) rotate(-90)" text-anchor="middle" fill="#111827">Balanced error, standard deviations</text>
+<line x1="169.54386864490675" x2="207.80453412462538" y1="108.86197032567728" y2="108.86197032567728" stroke="#6b7280" stroke-width="2"/>
+<circle cx="172.1958456973318" cy="108.86197032567728" r="6" fill="#6b7280"/>
+<text x="172.1958456973318" y="36" text-anchor="middle" fill="#6b7280">fit 6.6 ↑</text>
+<text x="182.1958456973318" y="98.86197032567728" text-anchor="start" fill="#6b7280" font-weight="600">Curve: 3.59 sd, 14 ns</text>
+<line x1="271.9998021760658" x2="302.9918232772835" y1="257.72613803603844" y2="257.72613803603844" stroke="#b45309" stroke-width="2"/>
+<circle cx="279.8599327398599" cy="257.72613803603844" r="6" fill="#b45309"/>
+<circle cx="279.8599327398599" cy="280.6664243853422" r="5" fill="#ffffff" stroke="#b45309" stroke-width="2"/>
+<text x="269.8599327398599" y="279.72613803603844" text-anchor="end" fill="#b45309" font-weight="600">Exposure: 0.54 sd, 27 ns</text>
+<line x1="401.80870372568387" x2="436.3697171117722" y1="260.51899027796765" y2="260.51899027796765" stroke="#1d4ed8" stroke-width="2"/>
+<circle cx="406.4061984833471" cy="260.51899027796765" r="6" fill="#1d4ed8"/>
+<circle cx="406.4061984833471" cy="280.37254441558224" r="5" fill="#ffffff" stroke="#1d4ed8" stroke-width="2"/>
+<text x="406.4061984833471" y="246.51899027796765" text-anchor="end" fill="#1d4ed8" font-weight="600">Perfusion: 0.48 sd, 44 ns</text>
+<circle cx="386" cy="52" r="5" fill="#374151"/><text x="396" y="56" fill="#374151">held out</text>
+<circle cx="458" cy="52" r="4" fill="#ffffff" stroke="#374151" stroke-width="2"/><text x="468" y="56" fill="#374151">fit</text>
+<text x="536" y="338" text-anchor="end" font-size="10" fill="#6b7280">Node v26.9.0, Apple M5, 10 cores, darwin 27.0.0 arm64</text>
+</svg>

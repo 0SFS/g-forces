@@ -1,0 +1,26 @@
+{
+  "source": {
+    "id": "C54",
+    "citation": "Cochran LB et al., 1954 (NADC), relaxed G-tolerance distribution, DTIC ADA177986; as cited by Copeland K, Whinnery JE. Cerebral blood flow based computer modeling of Gz-induced effects. DOT/FAA/AM-23/6, 2023, p. 6. Title and authors of the primary report not verified.",
+    "doi": "10.21949/1524446 (the citing report)",
+    "read": "secondary: the primary report returned 403; numbers from the citing report"
+  },
+  "conditions": {
+    "subjects": "1000",
+    "protection": "None; not fully relaxed (subjects held a control stick)",
+    "onset": "Rapid, in plateaus of 0.5 g and then 0.3 g",
+    "event": "Peripheral light loss, blackout and unconsciousness, by the load at which each appeared"
+  },
+  "assumptions": [
+    "Each plateau is reconstructed as a jump from rest held 15 s, the usual relaxed rapid-onset tolerance run; the plateau length is not given.",
+    "Peripheral light loss is read as the symptoms event and blackout as sight lost."
+  ],
+  "fixtures": [
+    { "id": "c54-pll", "family": "Relaxed thresholds", "role": "fit", "pilot": "relaxed", "locator": "CGEM-R p. 6",
+      "outcome": { "event": "symptoms", "measure": "threshold", "holdSeconds": 15, "mean": 4.1, "sd": 0.7, "n": 1000 } },
+    { "id": "c54-blackout", "family": "Relaxed thresholds", "role": "fit", "pilot": "relaxed", "locator": "CGEM-R p. 6",
+      "outcome": { "event": "vision-lost", "measure": "threshold", "holdSeconds": 15, "mean": 4.7, "sd": 0.8, "n": 1000 } },
+    { "id": "c54-unconscious", "family": "Relaxed thresholds", "role": "fit", "pilot": "relaxed", "locator": "CGEM-R p. 6",
+      "outcome": { "event": "unconscious", "measure": "threshold", "holdSeconds": 15, "mean": 5.4, "sd": 0.9, "n": 1000 } }
+  ]
+}

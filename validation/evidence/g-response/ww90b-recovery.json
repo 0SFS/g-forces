@@ -1,0 +1,30 @@
+{
+  "source": {
+    "id": "WW90b",
+    "citation": "Whinnery CC, Whinnery JE. The effect of +Gz offset rate on recovery from acceleration-induced loss of consciousness. Aviation, Space, and Environmental Medicine 1990;61:929-934.",
+    "pmid": "2241734",
+    "read": "abstract only (Europe PMC), truncated at 250 words"
+  },
+  "conditions": {
+    "subjects": "107 G-LOC episodes with onset above 3 g/s",
+    "protection": "Not stated in the abstract",
+    "event": "Absolute incapacitation: G-LOC to recovery of consciousness"
+  },
+  "assumptions": [
+    "Onset 3.5 g/s from +1.4 g to +7.7 g (W14's mean GMAX), held until LOC; only 'onset above 3 g/s' is given.",
+    "Offset from the step that shows LOC to +1.4 g.",
+    "A different study from the fitted W14 groups: held out."
+  ],
+  "fixtures": [
+    { "id": "ww90b-offset-0.97", "family": "Recovery after LOC", "role": "holdout", "pilot": "relaxed", "locator": "Abstract, 0.97 g/s (n 90)",
+      "protocol": { "startG": 1.4, "stages": [
+        { "segments": [{ "toG": 7.7, "gPerSecond": 3.5 }, { "seconds": 60 }], "until": "unconscious" },
+        { "segments": [{ "toG": 1.4, "gPerSecond": 0.97 }, { "seconds": 60 }] }] },
+      "outcome": { "event": "conscious", "from": "unconscious", "mean": 10.47, "sd": 3, "n": 90 } },
+    { "id": "ww90b-offset-2.75", "family": "Recovery after LOC", "role": "holdout", "pilot": "relaxed", "locator": "Abstract, 2.75 g/s (n 17)",
+      "protocol": { "startG": 1.4, "stages": [
+        { "segments": [{ "toG": 7.7, "gPerSecond": 3.5 }, { "seconds": 60 }], "until": "unconscious" },
+        { "segments": [{ "toG": 1.4, "gPerSecond": 2.75 }, { "seconds": 60 }] }] },
+      "outcome": { "event": "conscious", "from": "unconscious", "mean": 7.59, "sd": 3.14, "n": 17 } }
+  ]
+}
